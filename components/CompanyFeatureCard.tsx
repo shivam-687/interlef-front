@@ -13,7 +13,7 @@ const CompanyFeatureCard = ({ title, description, image_url }: CompanyFeatureCar
             <div className="flex flex-col justify-center items-center max-w-sm py-8 group mt-8 md:mt-0">
                 <div className=' w-[116px] h-[116px] rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center'>
                     <div className="w-28 h-28 rounded-full bg-indigo-50 flex items-center justify-center group-hover:">
-                        <Image src={image_url} width="60" height={60} alt=""></Image>
+                        <Image src={image_url} width="60" height={60} alt={`A vector icon that represent ${title}`}></Image>
                     </div>
                 </div>
 

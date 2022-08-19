@@ -1,8 +1,6 @@
 
 import type { NextPage } from 'next'
-import Head from 'next/head';
 import Footer from '../components/Footer';
-import { Navigation } from '../components/Navigation';
 import AttentionCard from '../sections/landing_page/Attentioncard';
 import Contact from '../sections/landing_page/Contact';
 import HeroSection from '../sections/landing_page/HeroSection';
@@ -12,6 +10,9 @@ import Portfolio from '../sections/landing_page/Portfolio';
 import Review from '../sections/landing_page/Review';
 import WelcomeSection from '../sections/landing_page/WelcomeSection';
 import WhyOurAgency from '../sections/landing_page/WhyOurAgency';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import Head from 'next/head';
+
 
 
 
@@ -20,16 +21,34 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Navigation></Navigation>
-      <HeroSection></HeroSection>
+      <Head>
+        <meta property="og:title" content="Interlef: Modern and Top web development agency in Uttar Pradesh" />
+            <meta property='og:description' content="A web development agency in uttar pradesh that specializes in modern website designs. We combine beautiful and functional ideas into effective designs."/>
+            <meta property='og:site_name' content="Interlef Web Solutions" />
+            <meta property='og:type' content="business.business"/>
+            <meta property="og:url" content="https://interlef.com" />
+            <meta property="og:image" content="https://res.cloudinary.com/interlef/image/upload/v1660924625/interlef/interleg-home-page_gup6dr.png" />
+
+            <meta name="twitter:card" content="player"/>
+            <meta name="twitter:site" content="@myinterlef"/>
+            <meta name="twitter:description" content="A web development agency in uttar pradesh that specializes in modern website designs. We combine beautiful and functional ideas into effective designs."/>
+            <meta name="twitter:title" content="Interlef: Modern & Top web development agency in Uttar Pradesh"/>
+            <meta name="twitter:image" content="https://res.cloudinary.com/interlef/image/upload/v1660924625/interlef/interleg-home-page_gup6dr.png"/>
+          <meta name="description" content="A web development agency in uttar pradesh that specializes in modern website designs. We combine beautiful and functional ideas into effective designs." />
+          <title>Interlef: Modern & Top web development agency in Uttar Pradesh</title>
+        </Head>
+
+      <Element name="home"><HeroSection></HeroSection></Element>
       <WelcomeSection></WelcomeSection>
       <WhyOurAgency></WhyOurAgency>
-      <OurServices></OurServices>
+      <Element name='services'><OurServices></OurServices></Element>
       <OurTechnology></OurTechnology>
-      <Portfolio></Portfolio>
-      <Review></Review>
-      <AttentionCard></AttentionCard>
-      <Contact></Contact>
+      <Element name='portfolio'><Portfolio></Portfolio></Element>
+      {/* <Review></Review> */}
+      <section className='mt-28'>
+        <AttentionCard></AttentionCard>
+      </section>
+      <Element name='contact'><Contact></Contact></Element>
       <Footer></Footer>
     </>
   );

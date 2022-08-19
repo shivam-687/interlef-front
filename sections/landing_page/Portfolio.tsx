@@ -75,7 +75,7 @@ const Portfolio = () => {
                         portfolioList.map((item, index) => {
                             return (
                                 <div  key={`${nanoid(5)}_${index}`}>
-                                    <div className="flex items-center justify-center p-3 ">
+                                    <div className="flex items-center justify-center p-5 ">
                                         <PortfolioCard title={item.title} image={item.image}></PortfolioCard>
                                     </div>
                                 </div>

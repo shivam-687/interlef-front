@@ -88,7 +88,7 @@ const Review = () => {
                             ReviewList.map((item, index) => {
                                 return (
                                     <div key={`${nanoid(5)}_${index}`}>
-                                        <div className="flex items-center justify-center p-3" >
+                                        <div className="flex items-center justify-center p-5" >
                                             <ReviewCard name={item.name} image={item.image} subtitle={item.subtitle}>{item.children}</ReviewCard>
                                         </div>
                                     </div>

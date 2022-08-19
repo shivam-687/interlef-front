@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import Image from "next/image";
 import Divider from "../../components/Divider";
+import ScrollAnimation from "../../components/ScrollAnimation";
 
 
 const WhyOurAgency = () => {
@@ -30,7 +31,7 @@ const WhyOurAgency = () => {
     ]
 
     return (
-        <section className="py-20  px-5">
+        <section className="py-20  px-5 overflow-hidden">
             <div className="container mx-auto grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div className="w-full flex flex-col  items-center">
                     <div className="block lg:hidden mb-4">
@@ -51,7 +52,8 @@ const WhyOurAgency = () => {
                             woaList.map((woa, index) => {
                                 return (
                                     
-                                        <div key={`${nanoid()}_${index}`} className="w-full flex mb-3 rounded-md shadow-md py-2 shadow-primary/20">
+                                        <ScrollAnimation key={`${nanoid()}_${index}`} animateIn="fadeInRight" animateDelay={index*0.3} animateOnce={true}>
+                                            <div  className="w-full flex mb-3 rounded-md shadow-md py-2 shadow-primary/20">
                                             <div className="flex-grow-0 flex items-start justify-center p-2">
                                                 <span className="inline-block w-2 h-2 rounded-full bg-primary"></span>
                                             </div>
@@ -60,6 +62,7 @@ const WhyOurAgency = () => {
                                                 <p className="">{woa.description}</p>
                                             </div>
                                         </div>
+                                        </ScrollAnimation>
                                     
                                 );
                             })

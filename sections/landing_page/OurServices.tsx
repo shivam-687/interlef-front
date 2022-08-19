@@ -1,4 +1,5 @@
 import Divider from "../../components/Divider";
+import ScrollTo from "../../components/ScrollTo";
 import ServiceCard from "../../components/ServiceCard";
 
 
@@ -13,18 +14,18 @@ const OurServices = () => {
         {
             title: "E-Commerce Development",
             description: "Make your eCommerce location a deals magnet. As an master eCommerce site advancement office, ready to assist you with site format plan, Shopify site plan, Shopify development, BigCommerce web plan and advancement, and more. We make versatile and web eCommerce stores that not as it were give agreeable shopping encounters but moreover decrease your deals cycle, increasing your eCommerce change rate. To raise your trade benefits, get a customized arrangement outlined to coordinate your needs.",
-            image: "/images/services/website_design.svg"
+            image: "/images/services/ecommerce.svg"
         },
         {
             title: "Custom CMS Development",
             description: "Need custom arrangements for your brand? Interlef Web Solutions can assist you with high-performing, secure, and instinctive web arrangements for your CMS stage that progress your trade forms and serve your users globally. Whether you’re seeking out for CMS advancement administrations, offer assistance with CMS integrative, CMS application advancement, CMS relocations, CMS plugin improvement, or CMS back and upkeep, we’ve got you secured. So let us rearrange your complex commerce workflows.",
-            image: "/images/services/website_design.svg"
+            image: "/images/services/cms-development.svg"
         },
 
         {
             title: "API Integration",
-            description: "Need custom arrangements for your brand? Interlef Web Solutions can assist you with high-performing, secure, and instinctive web arrangements for your CMS stage that progress your trade forms and serve your users globally. Whether you’re seeking out for CMS advancement administrations, offer assistance with CMS integrative, CMS application advancement, CMS relocations, CMS plugin improvement, or CMS back and upkeep, we’ve got you secured. So let us rearrange your complex commerce workflows.",
-            image: "/images/services/website_design.svg"
+            description: "Interlef has significant experience in the development and integration of APIs, together with web applications. This allows us to deliver APIs and their integration without disrupting your company's operations. We will analyze your current processes and architecture, help you develop a strategy and a plan, and identify and eliminate issues. With extensive experience, we will also help you make the right choice of API development and API integration solutions to meet your needs.",
+            image: "/images/services/api-integration.svg"
         }
     ]
 
@@ -49,7 +50,7 @@ const OurServices = () => {
                 </div>
 
                 <div className="mt-10 flex items-center justify-center">
-                    <button className="btn btn-primary btn-lg">Get Quote</button>
+                    <ScrollTo name="contact"><button className="btn btn-primary btn-lg">Get Quote</button></ScrollTo>
                 </div>
             </section>
         </>

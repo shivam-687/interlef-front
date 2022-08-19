@@ -20,7 +20,7 @@ const Contact = () => {
                 <div className="lg:col-span-1">
                     <ContactInfoCard></ContactInfoCard>
                 </div>
-                <div className="lg:col-start-2 lg:col-span-3 mt-10 lg:mt-0">
+                <div className="lg:col-start-2 lg:col-span-3 mt-10 lg:mt-0 relative">
                     <ContactForm></ContactForm>
                 </div>
             </div>

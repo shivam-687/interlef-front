@@ -1,5 +1,6 @@
 import CompanyFeatureCard from "../../components/CompanyFeatureCard";
 import Divider from "../../components/Divider";
+import ScrollAnimation from "../../components/ScrollAnimation";
 
 
 const WelcomeSection = () => {
@@ -8,12 +9,12 @@ const WelcomeSection = () => {
         {
             title: "Exellent Support",
             description: "We are always there to assst our clients in every possible way to meet client's expectations and end needs.",
-            image_url: "/images/icon.svg"
+            image_url: "/images/customer-support.svg"
         },
         {
             title: "Client centric development ",
             description: "we craft the clients need on web to tailor the solutions and enhance growth of the businesses.",
-            image_url: "/images/icon.svg"
+            image_url: "/images/client-centric.svg"
         },
         {
             title: "Quality deliverance",
@@ -30,7 +31,7 @@ const WelcomeSection = () => {
                         <div className="max-w-full md:max-w-xl text-center">
                             <h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1>
                             <Divider></Divider>
-                            <p className="mt-4">Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p>
+                            <p className="mt-4" >Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p>
                         </div>
                     </div>
 
@@ -38,7 +39,7 @@ const WelcomeSection = () => {
                         {
                             featureList.map((feature, index) => {
                                 return(
-                                    <CompanyFeatureCard image_url={feature.image_url} title={feature.title} description={feature.description} key={index}></CompanyFeatureCard>
+                                    <ScrollAnimation key={index} animateIn="fadeInUp" animateOut="fadeOut" animateDelay={index*0.2} animateDuration={1.5}><CompanyFeatureCard image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard></ScrollAnimation>
                                 )
                             })
                         }

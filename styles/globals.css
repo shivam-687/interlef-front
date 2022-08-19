@@ -22,10 +22,18 @@
     @apply text-black;
   } */
 
+  .active-nav-link{
+    @apply text-primary !important;
+  }
+
+  .active-side-menu-link{
+    @apply text-primary bg-primary/5 !important;
+  }
+
 }
 
 .slick-slider .slick-arrow::before{
-  color: black
+  color: black;
 }
 
 

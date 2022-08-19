@@ -13,6 +13,9 @@ module.exports = {
       sans: ["Inter", "Nunito", ...defaultTheme.fontFamily.sans],
       serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
     },
+    extends:{
+
+    }
     // extend: {
     //   colors: {
     //     primary: {
@@ -99,5 +102,5 @@ module.exports = {
     ],
   },
 
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('@tailwindcss/line-clamp')],
 };
