@@ -1,0 +1,9 @@
+/* 
+@layer components{
+    .slick-slider .slick-arrow {
+        @apply bg-primary
+    }
+} */
+.slick-slider .slick-arrow{
+    color: black;
+}

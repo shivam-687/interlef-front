@@ -1,9 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body{
+    font-family: Nunito, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Inter', sans-serif !important;
+  }
+
+}
+
+@layer components{
+  .mark{
+    @apply border border-red-700;
+  }
+
+  /* .slick-::before{
+    @apply text-black;
+  } */
+
+}
+
+.slick-slider .slick-arrow::before{
+  color: black
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+ 
+
 }
 
 a {
@@ -15,12 +46,11 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.wave{
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
+
+
