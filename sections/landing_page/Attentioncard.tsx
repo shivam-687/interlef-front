@@ -20,7 +20,8 @@ const AttentionCard = () => {
                 <div className="object lg:col-start-4 lg:col-span-5 w-full ">
                     <div className="bg-white w-full h-full rounded-lg relative">
                         <div className="lg:scale-110 lg:-translate-x-8 lg:-translate-y-8 lg:absolute lg:-left-5 lg:-bottom-5 hidden lg:block">
-                            <Image src="https://res.cloudinary.com/interlef/image/upload/v1660975129/mockup_4f94ccd8d6.png" alt="" width={600} height={500}></Image>
+                            {/* <Image src="https://res.cloudinary.com/interlef/image/upload/v1660975129/mockup_4f94ccd8d6.png" alt="" width={600} height={500}></Image> */}
+                            <img src="https://res.cloudinary.com/interlef/image/upload/v1660975129/mockup_4f94ccd8d6.png" alt="desktop mockup"></img>
                         </div>
                     </div>
                 </div>
