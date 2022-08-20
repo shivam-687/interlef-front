@@ -9,6 +9,8 @@ import { ScrollNavLink } from "./ScrollNavLink";
 import ScrollTo from "./ScrollTo";
 import { SideNavLink } from "./SideNavLink";
 import { useInView } from 'react-intersection-observer';
+import { FaDribbble, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { nanoid } from "nanoid";
 
 
 export type NavMenuItem = {
@@ -44,11 +46,34 @@ export const Navigation = () => {
             link: 'contact',
             type: 'scroll'
         },
+        // {
+        //     lable: "Blog",
+        //     link: 'blog',
+        //     type: 'link'
+        // },
+    ];
+
+    const socialContactList = [
         {
-            lable: "Blog",
-            link: 'blog',
-            type: 'link'
+            icon: <FaFacebookF />,
+            link: "https://www.facebook.com/myinterlef",
         },
+        // {
+        //     icon: <FaTwitter />,
+        //     link: "https://www.twitter.com/",
+        // },
+        {
+            icon: <FaInstagram />,
+            link: "https://www.instagram.com/myinterlef",
+        },
+        {
+            icon: <FaDribbble />,
+            link: "https://dribbble.com/interlef",
+        },
+        {
+            icon: <FaLinkedinIn />,
+            link: "https://www.linkedin.com/company/interlef/",
+        }
     ];
 
     const toggleMenu = () => {
@@ -122,6 +147,16 @@ export const Navigation = () => {
                                     })
                                 }
                             </ul>
+
+                            <div className="px-5 mt-5 border-t border-b border-t-gray-200 border-b-gray-200 py-2 flex items-center justify-center">
+                            {
+                                socialContactList.map((socialContact, index) => {
+                                    return (
+                                        <a className="inline-block p-2 hover:text-secondary active:text-primary text-gray-500" href={socialContact.link} key={`${nanoid(5)}_${index}`}>{socialContact.icon}</a>
+                                    )
+                                })
+                            }
+                            </div>
                         </Drawer>
                     </div>
                 </div>

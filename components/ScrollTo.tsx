@@ -24,7 +24,7 @@ const ScrollTo = (props: ScrollToProps) => {
     }
 
     return (
-        <div onClick={() => scrollTo(props.name)}>
+        <div onClick={() => scrollTo(name)}>
             {children}
         </div>
     );

@@ -8,23 +8,23 @@ const Footer = () => {
     const socialContactList = [
         {
             icon: <FaFacebookF />,
-            link: "https://www.facebook.com/",
+            link: "https://www.facebook.com/myinterlef",
         },
-        {
-            icon: <FaTwitter />,
-            link: "https://www.twitter.com/",
-        },
+        // {
+        //     icon: <FaTwitter />,
+        //     link: "https://www.twitter.com/",
+        // },
         {
             icon: <FaInstagram />,
-            link: "https://www.instagram.com/",
+            link: "https://www.instagram.com/myinterlef",
         },
         {
             icon: <FaDribbble />,
-            link: "https://www.dribbble.com/",
+            link: "https://dribbble.com/interlef",
         },
         {
             icon: <FaLinkedinIn />,
-            link: "https://www.linkedin.com/",
+            link: "https://www.linkedin.com/company/interlef/",
         }
     ];
 
