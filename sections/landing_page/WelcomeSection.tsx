@@ -39,7 +39,9 @@ const WelcomeSection = () => {
                         {
                             featureList.map((feature, index) => {
                                 return(
-                                    <ScrollAnimation key={index} animateIn="fadeInUp" animateOut="fadeOut" animateDelay={index*0.2} animateDuration={1.5}><CompanyFeatureCard image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard></ScrollAnimation>
+                                    // <ScrollAnimation key={index} animateIn="fadeInUp" animateOut="fadeOut" animateDelay={index*0.2} animateDuration={1.5}>
+                                        <CompanyFeatureCard key={index} image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard>
+                                    // </ScrollAnimation>
                                 )
                             })
                         }

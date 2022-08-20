@@ -51,9 +51,10 @@ const WhyOurAgency = () => {
                         {
                             woaList.map((woa, index) => {
                                 return (
-                                    
-                                        <ScrollAnimation key={`${nanoid()}_${index}`} animateIn="fadeInRight" animateDelay={index*0.3} animateOnce={true}>
-                                            <div  className="w-full flex mb-3 rounded-md shadow-md py-2 shadow-primary/20">
+
+                                    // <ScrollAnimation key={`${nanoid()}_${index}`} animateIn="fadeInRight" animateDelay={index*0.3} animateOnce={true}>
+                                    <>
+                                        <div className="w-full flex mb-3 rounded-md shadow-md py-2 shadow-primary/20">
                                             <div className="flex-grow-0 flex items-start justify-center p-2">
                                                 <span className="inline-block w-2 h-2 rounded-full bg-primary"></span>
                                             </div>
@@ -62,8 +63,9 @@ const WhyOurAgency = () => {
                                                 <p className="">{woa.description}</p>
                                             </div>
                                         </div>
-                                        </ScrollAnimation>
-                                    
+                                    </>
+                                    // </ScrollAnimation>
+
                                 );
                             })
                         }

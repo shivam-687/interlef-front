@@ -20,14 +20,16 @@ const HeroSection = () => {
                     <div className="flex items-center justify-center ">
                         <div className="content max-w-lg text-center lg:text-left">
                             <span className="bg-primary inline-block text-white mb-4 p-1 text-base rounded">Interlef Web Solutions</span>
-                            <ScrollAnimation animateIn="fadeIn">
+                            {/* <ScrollAnimation animateIn="fadeIn"> */}
                                 <h1 className="text-4xl lg:text-5xl font-black uppercase">A <span className="text-primary">Digital Agency</span> <br /> Focused On Web</h1>
-                            </ScrollAnimation>
-                            <ScrollAnimation animateIn="fadeIn" animateDelay={.3} ><p className="text-base leading-tight text-center md:text-left mt-3">
+                            {/* </ScrollAnimation> */}
+                            {/* <ScrollAnimation animateIn="fadeIn" animateDelay={.3} > */}
+                                <p className="text-base leading-tight text-center md:text-left mt-3">
                                 We are creative team of designers, developers, and strategists, building elevated websites from the heart of India.
-                            </p></ScrollAnimation>
+                                </p>
+                            {/* </ScrollAnimation> */}
                             <div className="hero-btns mt-10 flex items-center justify-center lg:justify-start gap-2">
-                                <ScrollTo name="contact"><button className="btn btn-md btn-primary">Get Quote</button></ScrollTo>
+                                <ScrollTo name="contact"><button className="btn btn-md btn-primary">Get Call Back</button></ScrollTo>
                                 <a href="https://wa.me/7984226239" target="_blank" rel="noreferrer" className="btn gap-2 btn-success">
                                     <BsWhatsapp className="text-white text-xl" />
                                     Whatsapp
