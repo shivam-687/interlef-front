@@ -9,11 +9,11 @@ const Portfolio = () => {
     const portfolioList = [
         {
             title: "Tezpremier Spices",
-            image: "/images/tezpremier-project.png"
+            image: "/images/tezpremier-project.jpg"
         },
         {
             title: "PTP Solutions",
-            image: "/images/primetech-project.png"
+            image: "/images/primetech-project.jpg"
         },
 
         {
