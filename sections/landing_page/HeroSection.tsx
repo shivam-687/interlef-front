@@ -40,8 +40,9 @@ const HeroSection = () => {
                     <div className="hero-image mt-10">
                         <div className="block md:hidden"><Image className="" width={500} height="500" src="/images/Website Creator-bro-animated.svg" alt="In illustration A boy is doing web development." /></div>
                         <div className="hidden md:block"><Image className="" width={700} height="700" src="/images/Website Creator-bro-animated.svg" alt="In illustration A boy is doing web development." /></div>
-                      
                     </div>
+
+                    
                 </div>
 
                 <Wave></Wave>

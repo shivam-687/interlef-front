@@ -12,6 +12,7 @@ import WelcomeSection from '../sections/landing_page/WelcomeSection';
 import WhyOurAgency from '../sections/landing_page/WhyOurAgency';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Head from 'next/head';
+import HeroV2 from '../sections/landing_page/HeroV2';
 
 
 
@@ -38,7 +39,7 @@ const Home: NextPage = () => {
           <title>Interlef: Modern & Top web development agency in Uttar Pradesh</title>
         </Head>
 
-      <Element name="home"><HeroSection></HeroSection></Element>
+      <Element name="home"><HeroV2></HeroV2></Element>
       <WelcomeSection></WelcomeSection>
       <WhyOurAgency></WhyOurAgency>
       <Element name='services'><OurServices></OurServices></Element>
