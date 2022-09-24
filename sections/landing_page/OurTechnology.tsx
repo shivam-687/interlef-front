@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 import Divider from "../../components/Divider";
 import TechnologyChip from "../../components/TechnologyChip";
 
@@ -64,12 +65,13 @@ const OurTechnology = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-5">
 
                 <div className=" max-w-xl">
-                    <div>
+                    <div className="overflow-hidden">
                         <h1 className="text-4xl font-bold text-center lg:text-left">Our Tech Stack</h1>
                         <Divider></Divider>
                         <div className="flex items-center justify-center my-8 lg:hidden">
                             <div className="">
-                                <Image src={image} alt="" width={700} height={500}></Image>
+                                {/* <Image src={image} alt="" width={700} height={500}></Image> */}
+                                <Fade delay={500} duration={2000}><Image src={image} alt="" width={700} height={700}></Image></Fade>
                             </div>
                         </div>
                         <p className="mt-2">Our work on the project includes UI/UX design, software development, testing, support, and maintenance. We build software in time, applying the latest technologies that optimize our work processes.</p>

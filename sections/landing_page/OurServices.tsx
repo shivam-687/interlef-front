@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import Divider from "../../components/Divider";
 import ScrollTo from "../../components/ScrollTo";
 import ServiceCard from "../../components/ServiceCard";
@@ -33,9 +34,9 @@ const OurServices = () => {
         <>
             <section className="py-20 px-5 container mx-auto">
                 <div className="w-full flex items-center justify-center">
-                    <div className="text-center max-w-md w-full">
-                    <h1 className="text-4xl font-bold mb-1">Our Services</h1>
-                    <Divider></Divider>
+                    <div className="text-center max-w-md w-full overflow-hidden">
+                        <Fade direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Our Services</h1></Fade>
+                        <Divider></Divider>
                     </div>
                 </div>
 
@@ -43,14 +44,18 @@ const OurServices = () => {
                     {
                         servicesList.map((service, index) => {
                             return (
-                                <ServiceCard key={index} image={service.image} title={service.title} description={service.description}></ServiceCard>
+                                <div className="overflow-hidden p-2"  key={index}>
+                                    <Fade  direction="up"><ServiceCard image={service.image} title={service.title} description={service.description}></ServiceCard></Fade>
+                                </div>
                             );
                         })
                     }
                 </div>
 
-                <div className="mt-10 flex items-center justify-center">
-                    <ScrollTo name="contact"><button className="btn btn-primary btn-lg">Get Quote</button></ScrollTo>
+                <div className="mt-10 flex items-center justify-center overflow-hidden">
+                    <div className="overflow-hidden">
+                    <Fade direction="left"><ScrollTo name="contact"><button className="btn btn-primary btn-lg">Get Quote</button></ScrollTo></Fade>
+                    </div>
                 </div>
             </section>
         </>
