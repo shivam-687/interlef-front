@@ -39,7 +39,7 @@ function HeroV2() {
                             <Fade direction="up" delay={(i + 1) * 300}>
                                 <h2 key={i} className={`
                         leading-none text-6xl 
-                        sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 
+                        sm:text-6xl md:text-9xl lg:text-8xl xl:text-9xl 
                         font-[900] text-center transition-all ease-out duration-1000 
                         pb-2 bg-clip-text 
                         relative
@@ -51,7 +51,7 @@ function HeroV2() {
                     })
                 }
             </div>
-            <div className="flex items-center gap-5 mt-5 md:mt-10">
+            <div className="flex items-center gap-5 mt-10 md:mt-10">
                 <div className="">
                     <Fade direction='left'><button className="btn md:btn-lg btn-primary shadow-lg shadow-primary/20">Get Quote</button></Fade>
                 </div>
@@ -68,10 +68,12 @@ function HeroV2() {
                 </div>
             </div>
 
-            <div className="mt-5 md:mt-10 max-w-3xl px-5">
+            <div className="mt-10 md:mt-10 max-w-3xl px-5 overflow-hidden">
+                <Fade direction='up'>
                 <p className="text-lg leading-tight text-center md:text-xl lg:2xl">
                   { ` We are creative team of designers, developers, and strategists, building elevated websites from the heart of India.`}
                 </p>
+                </Fade>
             </div>
         </div>
     )

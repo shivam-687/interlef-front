@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { NavLink } from "./NavLink";
-import { HiOutlineMenu } from "react-icons/hi";
+import { HiOutlineMenu, HiMenuAlt4 } from "react-icons/hi";
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css'
 import Link from "next/link";
@@ -120,9 +120,11 @@ export const Navigation = () => {
                             <Link href={'/'} className="nav-logo">
                                 <a><Image className="w-full h-auto max-w-full" width={100} height="25" src="/logo/full-logo.png" alt="" /></a>
                             </Link>
-                            <div className="menu-icon-container flex items-center justify-center border border-gray-200 p-1">
+                            <div className="menu-icon-container flex items-center justify-center p-1">
                                 <div className="menu-icon " onClick={toggleMenu}>
-                                    <HiOutlineMenu className="text-2xl" />
+                                    {
+                                        isOpen ? <HiMenuAlt4 className="text-2xl" /> : <HiMenuAlt4 className="text-2xl" />
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -149,13 +151,13 @@ export const Navigation = () => {
                             </ul>
 
                             <div className="px-5 mt-5 border-t border-b border-t-gray-200 border-b-gray-200 py-2 flex items-center justify-center">
-                            {
-                                socialContactList.map((socialContact, index) => {
-                                    return (
-                                        <a className="inline-block p-2 hover:text-secondary active:text-primary text-gray-500" href={socialContact.link} key={`${nanoid(5)}_${index}`}>{socialContact.icon}</a>
-                                    )
-                                })
-                            }
+                                {
+                                    socialContactList.map((socialContact, index) => {
+                                        return (
+                                            <a className="inline-block p-2 hover:text-secondary active:text-primary text-gray-500" href={socialContact.link} key={`${nanoid(5)}_${index}`}>{socialContact.icon}</a>
+                                        )
+                                    })
+                                }
                             </div>
                         </Drawer>
                     </div>

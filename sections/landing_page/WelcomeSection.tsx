@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import CompanyFeatureCard from "../../components/CompanyFeatureCard";
 import Divider from "../../components/Divider";
 import ScrollAnimation from "../../components/ScrollAnimation";
@@ -29,7 +30,9 @@ const WelcomeSection = () => {
                 <div className="container mx-auto">
                     <div className="flex items-center justify-center">
                         <div className="max-w-full md:max-w-xl text-center">
-                            <h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1>
+                            <div className="overflow-hidden">
+                                <Fade direction="up"><h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1></Fade>
+                            </div>
                             <Divider></Divider>
                             <p className="mt-4" >Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p>
                         </div>
