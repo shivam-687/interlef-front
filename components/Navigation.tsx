@@ -95,7 +95,7 @@ export const Navigation = () => {
                         <div className="desktop-nav px-5 py-2 hidden md:flex items-center w-full">
                             <Link href={'/'}>
                                 <a className="nav-logo block flex-grow-0">
-                                    <Image className="w-full h-auto max-w-full" width={100} height="25" src="/logo/full-logo.png" alt="" />
+                                    <Image className="w-full h-auto max-w-full" width={150} height="35" src="/logo/full-logo.png" alt="" />
                                 </a>
                             </Link>
                             <div className="nav-item flex-grow flex items-center justify-end">
