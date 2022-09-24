@@ -71,7 +71,7 @@ const OurTechnology = () => {
                         <div className="flex items-center justify-center my-8 lg:hidden">
                             <div className="">
                                 {/* <Image src={image} alt="" width={700} height={500}></Image> */}
-                                <Fade delay={500} duration={2000}><Image src={image} alt="" width={700} height={700}></Image></Fade>
+                                <Fade triggerOnce delay={500} duration={2000}><Image src={image} alt="" width={700} height={700}></Image></Fade>
                             </div>
                         </div>
                         <p className="mt-2">Our work on the project includes UI/UX design, software development, testing, support, and maintenance. We build software in time, applying the latest technologies that optimize our work processes.</p>

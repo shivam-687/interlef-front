@@ -31,11 +31,11 @@ const WelcomeSection = () => {
                     <div className="flex items-center justify-center">
                         <div className="max-w-full md:max-w-xl text-center">
                             <div className="overflow-hidden">
-                                <Fade direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1></Fade>
+                                <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1></Fade>
                             </div>
                             <Divider></Divider>
                             <div className="overflow-hidden">
-                               <Fade direction="down" delay={500}> <p className="mt-4">Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p></Fade>
+                               <Fade triggerOnce direction="down" delay={500}> <p className="mt-4">Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p></Fade>
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const WelcomeSection = () => {
                                 return (
                                     // <ScrollAnimation key={index} animateIn="fadeInUp" animateOut="fadeOut" animateDelay={index*0.2} animateDuration={1.5}>
                                    <div className="overflow-hidden" key={index}>
-                                     <Fade  direction="up" delay={(index) * 200}><CompanyFeatureCard image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard></Fade>
+                                     <Fade triggerOnce direction="up" delay={(index) * 200}><CompanyFeatureCard image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard></Fade>
                                    </div>
                                     // </ScrollAnimation>
                                 )

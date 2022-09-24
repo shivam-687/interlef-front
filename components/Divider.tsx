@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 const Divider = () => {
     return (
         <div className="overflow-hidden">
-            <Fade direction="left">
+            <Fade triggerOnce direction="left">
             <div className="w-full h-1 bg-gradient-to-r from-primary to-secondary rounded-2xl"></div>
             </Fade>
         </div>
