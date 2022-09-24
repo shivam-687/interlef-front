@@ -61,13 +61,15 @@ class MyDocument extends Document {
         return (
             <Html data-theme="interlef_light">
                 <Head >
-
-                    <Script id="google-tagmanager" strategy="afterInteractive" dangerouslySetInnerHTML={{
-                        __html: `(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
-                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                        })(window,document,'script','dataLayer','GTM-NMX5MPL');`}}></Script>
+                        <Script id="gt-manager" strategy='lazyOnload'>
+                            {
+                               `(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
+                               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                               })(window,document,'script','dataLayer','GTM-NMX5MPL');` 
+                            }
+                        </Script>
 
                     <meta name="robots" content="index, follow" />
                     <meta name="googlebot" content="index, follow" />
