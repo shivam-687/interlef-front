@@ -24,7 +24,7 @@ function HeroV2() {
             } else {
                 setLineNo(prevCount => prevCount + 1);
             }
-            console.log("Line No: ", lineNo);
+            // console.log("Line No: ", lineNo);
         }, 3000);
         setActiveGradient(gradientPattern[lineNo]);
         return () => clearInterval(intervalId);
