@@ -87,7 +87,7 @@ const Portfolio = () => {
                             return (
                                 <div key={`${nanoid(5)}_${index}`}>
                                     <div className="flex items-center justify-center p-5 ">
-                                        <PortfolioCard title={item.title} image={item.image}></PortfolioCard>
+                                        <PortfolioCard title={item.title} image={item.image} link={item.link}></PortfolioCard>
                                     </div>
                                 </div>
 
