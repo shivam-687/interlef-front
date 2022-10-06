@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 import Divider from "../../components/Divider";
 import TechnologyChip from "../../components/TechnologyChip";
 
@@ -64,22 +65,27 @@ const OurTechnology = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-5">
 
                 <div className=" max-w-xl">
-                    <div>
-                        <h1 className="text-4xl font-bold text-center lg:text-left">Our Tech Stack</h1>
+                    <div className="overflow-hidden">
+                    <div className="overflow-hidden"><Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold text-center lg:text-left">Our Tech Stack</h1></Fade></div>
                         <Divider></Divider>
                         <div className="flex items-center justify-center my-8 lg:hidden">
                             <div className="">
-                                <Image src={image} alt="" width={700} height={500}></Image>
+                                {/* <Image src={image} alt="" width={700} height={500}></Image> */}
+                                <Fade triggerOnce delay={500} duration={2000}><Image src={image} alt="" width={700} height={700}></Image></Fade>
                             </div>
                         </div>
+                        <div className="overflow-hidden"><Fade triggerOnce direction="down" delay={500}>
                         <p className="mt-2">Our work on the project includes UI/UX design, software development, testing, support, and maintenance. We build software in time, applying the latest technologies that optimize our work processes.</p>
+                        </Fade></div>
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-3">
                         {
                             techList.map((tech, index) => {
                                 return (
-                                    <TechnologyChip key={index} title={tech.title} image={tech.image}></TechnologyChip>
+                                    <Fade key={index} direction="up" delay={index * 100} triggerOnce>
+                                        <TechnologyChip  title={tech.title} image={tech.image}></TechnologyChip>
+                                    </Fade>
                                 );
                             })
                         }

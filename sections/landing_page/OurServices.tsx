@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import Divider from "../../components/Divider";
 import ScrollTo from "../../components/ScrollTo";
 import ServiceCard from "../../components/ServiceCard";
@@ -8,12 +9,12 @@ const OurServices = () => {
     const servicesList = [
         {
             title: "Website Design",
-            description: "Need a staggering web page that blows your customer’s minds? As an master web plan administrations company, our group of master site creators have effectively made hundreds of websites that charm your gathering of people. Our web plan administrations incorporate WordPress web plan, Shopify site plan, BigCommerce web plan, site format plan, and more. In this way, we make the idealize site that primes your clients for transformations as a custom web plan company. So let’s bring your dream site to reality.",
+            description: "Need a staggering web page that blows your customer’s minds? As an master web plan administrations company, our group of master site creators have effectively made hundreds of websites that charm your gathering of people. Our web plan administrations incorporate WordPress, Shopify, BigCommerce, site format plan, and more. In this way, we make the idealize site that primes your clients for transformations as a custom web plan company. So let’s bring your dream site to reality.",
             image: "/images/services/website_design.svg"
         },
         {
             title: "E-Commerce Development",
-            description: "Make your eCommerce location a deals magnet. As an master eCommerce site advancement office, ready to assist you with site format plan, Shopify site plan, Shopify development, BigCommerce web plan and advancement, and more. We make versatile and web eCommerce stores that not as it were give agreeable shopping encounters but moreover decrease your deals cycle, increasing your eCommerce change rate. To raise your trade benefits, get a customized arrangement outlined to coordinate your needs.",
+            description: "Make your eCommerce location a deals magnet. As an master eCommerce site advancement office, ready to assist you with site format plan, Shopify site plan, Shopify, BigCommerce web plan and advancement, and more. We make versatile and web eCommerce stores that not as it were give agreeable shopping encounters but moreover decrease your deals cycle, increasing your eCommerce change rate. To raise your trade benefits, get a customized arrangement outlined to coordinate your needs.",
             image: "/images/services/ecommerce.svg"
         },
         {
@@ -33,9 +34,9 @@ const OurServices = () => {
         <>
             <section className="py-20 px-5 container mx-auto">
                 <div className="w-full flex items-center justify-center">
-                    <div className="text-center max-w-md w-full">
-                    <h1 className="text-4xl font-bold mb-1">Our Services</h1>
-                    <Divider></Divider>
+                    <div className="text-center max-w-md w-full overflow-hidden">
+                        <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Our Services</h1></Fade>
+                        <Divider></Divider>
                     </div>
                 </div>
 
@@ -43,14 +44,18 @@ const OurServices = () => {
                     {
                         servicesList.map((service, index) => {
                             return (
-                                <ServiceCard key={index} image={service.image} title={service.title} description={service.description}></ServiceCard>
+                                <div className="overflow-hidden p-2"  key={index}>
+                                    <Fade triggerOnce direction="up"><ServiceCard image={service.image} title={service.title} description={service.description}></ServiceCard></Fade>
+                                </div>
                             );
                         })
                     }
                 </div>
 
-                <div className="mt-10 flex items-center justify-center">
-                    <ScrollTo name="contact"><button className="btn btn-primary btn-lg">Get Quote</button></ScrollTo>
+                <div className="mt-10 flex items-center justify-center overflow-hidden">
+                    <div className="overflow-hidden">
+                    <Fade triggerOnce direction="left"><ScrollTo name="contact"><button className="btn btn-primary btn-lg">Get Quote</button></ScrollTo></Fade>
+                    </div>
                 </div>
             </section>
         </>

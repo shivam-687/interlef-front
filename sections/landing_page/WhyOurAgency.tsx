@@ -1,5 +1,6 @@
 import { nanoid } from "nanoid";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 import Divider from "../../components/Divider";
 import ScrollAnimation from "../../components/ScrollAnimation";
 
@@ -34,27 +35,28 @@ const WhyOurAgency = () => {
         <section className="py-20  px-5 overflow-hidden">
             <div className="container mx-auto grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div className="w-full flex flex-col  items-center">
-                    <div className="block lg:hidden mb-4">
-                        <h1 className="text-4xl font-bold mb-1">Why Our Agency</h1>
+                    <div className="block lg:hidden mb-4 overflow-hidden">
+                        <Fade triggerOnce direction="up"><h1 className="text-4xl font-bold mb-1">Why Our Agency</h1></Fade>
                         <Divider></Divider>
                     </div>
-                    <Image src={image} alt="" width={700} height={700}></Image>
+                    <Fade triggerOnce delay={500} duration={2000}><Image src={image} alt="" width={700} height={700}></Image></Fade>
                 </div>
 
                 <div className="w-full flex flex-col justify-center">
-                    <div className="hidden lg:block mb-4">
-                        <h1 className="text-4xl font-bold mb-1">Why Our Agency</h1>
+                    <div className="hidden lg:block mb-4 overflow-hidden">
+                    <Fade triggerOnce direction="up"><h1 className="text-4xl font-bold mb-1">Why Our Agency</h1></Fade>
                         <Divider></Divider>
                     </div>
 
-                    <div className="">
+                    <div className="overflow-hidden px-3">
                         {
                             woaList.map((woa, index) => {
                                 return (
 
                                     // <ScrollAnimation key={`${nanoid()}_${index}`} animateIn="fadeInRight" animateDelay={index*0.3} animateOnce={true}>
                                     <>
-                                        <div className="w-full flex mb-3 rounded-md shadow-md py-2 shadow-primary/20">
+                                        <Fade triggerOnce direction="left" delay={index * 200}>
+                                        <div className="w-full flex mb-3 shadow-md shadow-primary/20 rounded-md  py-2  relative">
                                             <div className="flex-grow-0 flex items-start justify-center p-2">
                                                 <span className="inline-block w-2 h-2 rounded-full bg-primary"></span>
                                             </div>
@@ -62,7 +64,9 @@ const WhyOurAgency = () => {
                                                 <h3 className="text-xl font-bold">{woa.title}</h3>
                                                 <p className="">{woa.description}</p>
                                             </div>
+                                            
                                         </div>
+                                        </Fade>
                                     </>
                                     // </ScrollAnimation>
 

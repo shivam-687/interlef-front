@@ -1,3 +1,4 @@
+import { Fade } from "react-awesome-reveal";
 import CompanyFeatureCard from "../../components/CompanyFeatureCard";
 import Divider from "../../components/Divider";
 import ScrollAnimation from "../../components/ScrollAnimation";
@@ -29,18 +30,24 @@ const WelcomeSection = () => {
                 <div className="container mx-auto">
                     <div className="flex items-center justify-center">
                         <div className="max-w-full md:max-w-xl text-center">
-                            <h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1>
+                            <div className="overflow-hidden">
+                                <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1></Fade>
+                            </div>
                             <Divider></Divider>
-                            <p className="mt-4" >Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p>
+                            <div className="overflow-hidden">
+                               <Fade triggerOnce direction="down" delay={500}> <p className="mt-4">Your Trusted Web Design & Development Partner For Your Business, We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p></Fade>
+                            </div>
                         </div>
                     </div>
 
                     <div className=" grid grid-cols-1 md:grid-cols-3 place-items-center mt-14">
                         {
                             featureList.map((feature, index) => {
-                                return(
+                                return (
                                     // <ScrollAnimation key={index} animateIn="fadeInUp" animateOut="fadeOut" animateDelay={index*0.2} animateDuration={1.5}>
-                                        <CompanyFeatureCard key={index} image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard>
+                                   <div className="overflow-hidden" key={index}>
+                                     <Fade triggerOnce direction="up" delay={(index) * 200}><CompanyFeatureCard image_url={feature.image_url} title={feature.title} description={feature.description}></CompanyFeatureCard></Fade>
+                                   </div>
                                     // </ScrollAnimation>
                                 )
                             })

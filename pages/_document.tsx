@@ -86,7 +86,7 @@ class MyDocument extends Document {
 
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet" />
+                    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800:900&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet" />
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(this.structuredData) }} />
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(this.localBusiness) }} />
                 </Head>

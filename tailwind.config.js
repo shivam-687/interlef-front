@@ -88,7 +88,7 @@ module.exports = {
           info: "#3ABFF8",
           "info-content": "#FFFFFF",
 
-          success: "#36D399",
+          success: "#25D366",
           "success-content": "#FFFFFF",
 
           warning: "#FBBD23",
