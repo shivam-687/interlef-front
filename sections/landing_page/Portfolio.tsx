@@ -9,6 +9,11 @@ const Portfolio = () => {
 
     const portfolioList = [
         {
+            title: "Poochie",
+            image: "/images/poochie.jpg",
+            link: 'https://poochies.interlef.com'
+        },
+        {
             title: "Tezpremier Spices",
             image: "/images/tezpremier-project.jpg"
         },
@@ -17,10 +22,6 @@ const Portfolio = () => {
             image: "/images/primetech-project.jpg"
         },
 
-        {
-            title: "Poochie",
-            image: "/images/poochie.jpg"
-        }
     ]
 
     var settings: Settings = {
