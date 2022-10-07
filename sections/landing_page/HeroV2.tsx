@@ -71,7 +71,7 @@ function HeroV2() {
             <div className="mt-10 md:mt-10 max-w-3xl px-5 overflow-hidden">
                 <Fade direction='up'>
                 <p className="text-lg leading-tight text-center md:text-xl lg:2xl">
-                  { ` We are creative team of designers, developers, and strategists, building elevated websites from the heart of India.`}
+                  { ` We’re different… and by different we mean better. We are creative team of designers, developers, and strategists, building elevated websites. Using a proven method of innovative design and personalized strategies, we can elevate your brand above the competition.`}
                 </p>
                 </Fade>
             </div>
