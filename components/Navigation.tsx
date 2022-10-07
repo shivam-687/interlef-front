@@ -99,7 +99,7 @@ export const Navigation = () => {
                                 </a>
                             </Link>
                             <div className="nav-item flex-grow flex items-center justify-end">
-                                <div className="nav-link mr-3">
+                                <div className="nav-link mr-3 flex justify-center w-full">
                                     {
                                         menus.map((menu, index) => {
                                             return (
@@ -111,7 +111,7 @@ export const Navigation = () => {
                                     }
                                 </div>
                                 <div className="nav-btn-group">
-                                    <ScrollTo name="contact"><button className=" btn btn-primary">Get Quote</button></ScrollTo>
+                                    <ScrollTo name="contact"><button className=" btn btn-primary">Quote</button></ScrollTo>
                                 </div>
                             </div>
                         </div>

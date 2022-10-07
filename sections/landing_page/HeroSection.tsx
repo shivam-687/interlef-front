@@ -25,7 +25,7 @@ const HeroSection = () => {
                             {/* </ScrollAnimation> */}
                             {/* <ScrollAnimation animateIn="fadeIn" animateDelay={.3} > */}
                                 <p className="text-base leading-tight text-center md:text-left mt-3">
-                                We are creative team of designers, developers, and strategists, building elevated websites from the heart of India.
+                                We’re different… and by different we mean better. We are creative team of designers, developers, and strategists, building elevated websites. Using a proven method of innovative design and personalized strategies, we can elevate your brand above the competition.
                                 </p>
                             {/* </ScrollAnimation> */}
                             <div className="hero-btns mt-10 flex items-center justify-center lg:justify-start gap-2">
