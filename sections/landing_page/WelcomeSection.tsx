@@ -31,7 +31,7 @@ const WelcomeSection = () => {
                     <div className="flex items-center justify-center">
                         <div className="max-w-full md:max-w-xl text-center">
                             <div className="overflow-hidden">
-                                <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Welcome To Interlef</h1></Fade>
+                                <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1"><span className='text-3xl'>🙏</span> Welcome To Interlef <span className='text-3xl'>🙏</span></h1> </Fade>
                             </div>
                             <Divider></Divider>
                             <div className="overflow-hidden">

@@ -13,6 +13,7 @@ import WhyOurAgency from '../sections/landing_page/WhyOurAgency';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import Head from 'next/head';
 import HeroV2 from '../sections/landing_page/HeroV2';
+import TopStrip from '../components/TopStrip';
 
 
 

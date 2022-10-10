@@ -23,7 +23,7 @@
   } */
 
   .active-nav-link{
-    @apply text-primary !important;
+    @apply text-primary border-primary !important;
   }
 
   .active-side-menu-link{

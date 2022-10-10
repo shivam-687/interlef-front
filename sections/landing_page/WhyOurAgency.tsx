@@ -4,7 +4,6 @@ import { Fade } from "react-awesome-reveal";
 import Divider from "../../components/Divider";
 import ScrollAnimation from "../../components/ScrollAnimation";
 
-
 const WhyOurAgency = () => {
 
     const image = "/images/woa_image.svg";
@@ -44,7 +43,7 @@ const WhyOurAgency = () => {
 
                 <div className="w-full flex flex-col justify-center">
                     <div className="hidden lg:block mb-4 overflow-hidden">
-                    <Fade triggerOnce direction="up"><h1 className="text-4xl font-bold mb-1">Why Our Agency</h1></Fade>
+                    <Fade triggerOnce direction="up"><h1 className="text-4xl font-bold mb-1"><span className='text-3xl'>😎</span> Why Our Agency</h1></Fade>
                         <Divider></Divider>
                     </div>
 

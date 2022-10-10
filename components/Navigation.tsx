@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { NavLink } from "./NavLink";
-import { HiOutlineMenu, HiMenuAlt4 } from "react-icons/hi";
+import { HiMenuAlt4 } from "react-icons/hi";
+import { MdPhoneCallback } from 'react-icons/md'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css'
 import Link from "next/link";
@@ -111,7 +112,7 @@ export const Navigation = () => {
                                     }
                                 </div>
                                 <div className="nav-btn-group">
-                                    <ScrollTo name="contact"><button className=" btn btn-primary">Quote</button></ScrollTo>
+                                    <ScrollTo name="contact"><button className=" btn btn-primary gap-2 w-max"><MdPhoneCallback className="text-lg"/>Get Call</button></ScrollTo>
                                 </div>
                             </div>
                         </div>

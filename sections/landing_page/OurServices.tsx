@@ -35,7 +35,7 @@ const OurServices = () => {
             <section className="py-20 px-5 container mx-auto">
                 <div className="w-full flex items-center justify-center">
                     <div className="text-center max-w-md w-full overflow-hidden">
-                        <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1">Our Services</h1></Fade>
+                        <Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold mb-1"> <span className="text-3xl">&#128718;</span> Our Services</h1></Fade>
                         <Divider></Divider>
                     </div>
                 </div>
