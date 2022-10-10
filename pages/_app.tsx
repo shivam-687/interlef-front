@@ -8,14 +8,16 @@ import TopStrip from "../components/TopStrip";
 import DiwaliDeepStrip from "../components/special-ocassion/DiwaliDeepStrip";
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <>
       <TopStrip/>
-      <div className="fixed left-0 bottom-10 w-full z-30">
+      <div className="fixed left-0 bottom-0 w-full z-30 backdrop-blur-sm bg-white/20">
                 <DiwaliDeepStrip />
             </div>
       <Navigation></Navigation>
       <Component {...pageProps} />
+     
     </>
   );
 }

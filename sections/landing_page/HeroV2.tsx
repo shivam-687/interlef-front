@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Fade } from 'react-awesome-reveal';
 import { BsWhatsapp } from 'react-icons/bs';
 import { MdPhoneCallback } from 'react-icons/md'
-import DiwaliDeepStrip from '../../components/special-ocassion/DiwaliDeepStrip';
 
 import { Fireworks } from '@fireworks-js/react'
 import type { FireworksHandlers } from '@fireworks-js/react'
+import { Navigation } from '../../components/Navigation';
 
 function HeroV2() {
     const [lineNo, setLineNo] = useState(0);
@@ -26,7 +26,7 @@ function HeroV2() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             if (lineNo >= texts.length - 1) {
-                setLineNo(0);
+                setLineNo(0);Navigation
             } else {
                 setLineNo(prevCount => prevCount + 1);
             }
@@ -48,16 +48,17 @@ function HeroV2() {
             {/* <video ref={vidref} className='absolute w-full  left-0 top-0 aspect-video' autoPlay={true} loop >
                 <source src="https://res.cloudinary.com/dzqdvl4di/video/upload/v1665390194/interlef/Fireworks_-_10863_crfefe.mp4" />
             </video> */}
-            <div className=" absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm ">
+            <div className=" absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm hidden md:block">
                 <Fireworks
                     ref={ref}
-                    options={{ opacity: 0.5, intensity: 9}}
+                    options={{ opacity: 0.5, intensity: 12 }}
                     style={{
+                        
                         top: 0,
                         left: 0,
                         width: '100%',
                         height: '100%',
-                        position: "inherit",
+                        position: "fixed",
                         background: '#fff'
                     }}
                 />
