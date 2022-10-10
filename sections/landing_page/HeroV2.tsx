@@ -48,16 +48,16 @@ function HeroV2() {
             {/* <video ref={vidref} className='absolute w-full  left-0 top-0 aspect-video' autoPlay={true} loop >
                 <source src="https://res.cloudinary.com/dzqdvl4di/video/upload/v1665390194/interlef/Fireworks_-_10863_crfefe.mp4" />
             </video> */}
-            <div className="absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm">
+            <div className=" absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm ">
                 <Fireworks
                     ref={ref}
-                    options={{ opacity: 0.5}}
+                    options={{ opacity: 0.5, intensity: 9}}
                     style={{
                         top: 0,
                         left: 0,
                         width: '100%',
                         height: '100%',
-                        position: "fixed",
+                        position: "inherit",
                         background: '#fff'
                     }}
                 />
