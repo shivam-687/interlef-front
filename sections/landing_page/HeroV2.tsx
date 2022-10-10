@@ -64,9 +64,6 @@ function HeroV2() {
             </div>
 
             {/* </div> */}
-            <div className="absolute left-0 bottom-10 w-full">
-                <DiwaliDeepStrip />
-            </div>
             <div className=' flex flex-col items-center'>
                 {
                     texts.map((t, i) => {

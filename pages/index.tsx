@@ -14,6 +14,7 @@ import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scro
 import Head from 'next/head';
 import HeroV2 from '../sections/landing_page/HeroV2';
 import TopStrip from '../components/TopStrip';
+import DiwaliDeepStrip from '../components/special-ocassion/DiwaliDeepStrip';
 
 
 
