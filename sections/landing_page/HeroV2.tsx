@@ -6,6 +6,7 @@ import { MdPhoneCallback } from 'react-icons/md'
 import { Fireworks } from '@fireworks-js/react'
 import type { FireworksHandlers } from '@fireworks-js/react'
 import { Navigation } from '../../components/Navigation';
+import ScrollTo from '../../components/ScrollTo';
 
 function HeroV2() {
     const [lineNo, setLineNo] = useState(0);
@@ -86,7 +87,7 @@ function HeroV2() {
             </div>
             <div className="flex items-center gap-5 mt-10 md:mt-10">
                 <div className="">
-                    <Fade direction='left'><button className="btn md:btn-lg btn-primary shadow-lg shadow-primary/20 gap-2"><MdPhoneCallback className='text-2xl' />Get Callback</button></Fade>
+                    <Fade direction='left'><ScrollTo name="contact"><button className="btn md:btn-lg btn-primary shadow-lg shadow-primary/20 gap-2"><MdPhoneCallback className='text-2xl' />Get Callback</button></ScrollTo></Fade>
                 </div>
                 <div className="">
                     <Fade direction='right'>

@@ -80,8 +80,8 @@ const Portfolio = () => {
                 </div>
             </div>
 
-            <div className="mt-5 mx-auto">
-                <Slider {...settings}>
+            <div className="mt-10 mx-auto">
+                {/* <Slider {...settings}>
                     {
                         portfolioList.map((item, index) => {
                             return (
@@ -94,7 +94,20 @@ const Portfolio = () => {
                             )
                         })
                     }
-                </Slider>
+                </Slider> */}
+                <div className="grid grid-cols-1 md:grid-cols-3 ">
+                    {
+                        portfolioList.map((item, index) => {
+                            return <div key={`${nanoid(5)}_${index}`} className="overflow-hidden px-2 py-5">
+                            <Fade direction="up" triggerOnce delay={index * 200}>
+                            <div className="flex items-center justify-center ">
+                                <PortfolioCard title={item.title} image={item.image} link={item.link}></PortfolioCard>
+                            </div>
+                            </Fade>
+                        </div>
+                        })
+                    }
+                </div>
             </div>
 
         </section>

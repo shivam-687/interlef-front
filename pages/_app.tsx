@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <TopStrip/>
-      <div className="fixed left-0 bottom-0 w-full z-30 backdrop-blur-sm bg-white/20">
+      <div className="fixed left-0 bottom-0 w-full z-30 bg-base">
                 <DiwaliDeepStrip />
             </div>
       <Navigation></Navigation>
