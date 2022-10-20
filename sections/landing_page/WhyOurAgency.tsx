@@ -55,7 +55,7 @@ const WhyOurAgency = () => {
                                     // <ScrollAnimation key={`${nanoid()}_${index}`} animateIn="fadeInRight" animateDelay={index*0.3} animateOnce={true}>
                                     
                                         <Fade triggerOnce direction="left" delay={index * 200} key={index}>
-                                        <div className="w-full flex mb-3 shadow-md shadow-primary/20 rounded-md  py-2  relative">
+                                        <div className="w-full flex mb-3 shadow-md shadow-primary/20 rounded-md py-2 relative backdrop-blur bg-white/50">
                                             <div className="flex-grow-0 flex items-start justify-center p-2">
                                                 <span className="inline-block w-2 h-2 rounded-full bg-primary"></span>
                                             </div>

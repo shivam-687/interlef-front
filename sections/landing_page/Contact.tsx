@@ -8,7 +8,7 @@ const Contact = () => {
     return (
 
         <section className="py-20 px-5 mx-auto overflow-hidden">
-            <div className="header flex items-center justify-center">
+            <div className="header flex items-center justify-center ">
                 <div className="max-w-2xl w-full text-center">
                     <div className="overflow-hidden">
                         <Fade direction="up" triggerOnce>
@@ -25,8 +25,8 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="flex items-center justify-center">
-                <div className="mt-10 rounded-lg shadow-lg shadow-primary/20 p-5 grid grid-cols-1 lg:grid-cols-3 max-w-screen-xl w-full">
+            <div className="flex items-center justify-center ">
+                <div className="mt-10 rounded-lg shadow-lg shadow-primary/20 p-5 grid grid-cols-1 lg:grid-cols-3 max-w-screen-xl w-full bg-white">
                     <div className="lg:col-span-1 overflow-hidden">
                         <Fade direction="left" className="h-full" triggerOnce>
                             <ContactInfoCard></ContactInfoCard>

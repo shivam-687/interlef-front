@@ -110,7 +110,7 @@ class MyDocument extends Document {
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(this.structuredData) }} />
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(this.localBusiness) }} />
                 </Head>
-                <body>
+                <body className='bg-repeat' style={{backgroundImage: `url('/images/bg-pattern.jpg')`}}>
                     <noscript dangerouslySetInnerHTML={{
                         __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMX5MPL"
                         height="0" width="0" style="display:none;visibility:hidden"></iframe>`}}></noscript>

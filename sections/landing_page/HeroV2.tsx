@@ -44,7 +44,7 @@ function HeroV2() {
     })
 
     return (
-        <div className='min-h-[calc(100vh-70px)] flex flex-col justify-center items-center relative overflow-hidden'>
+        <div className='min-h-[calc(100vh-70px)] flex flex-col justify-center items-center relative overflow-hidden bg-transparent'>
             {/* <div className="absolute w-full h-full left-0 top-0"> */}
             {/* <video ref={vidref} className='absolute w-full  left-0 top-0 aspect-video' autoPlay={true} loop >
                 <source src="https://res.cloudinary.com/dzqdvl4di/video/upload/v1665390194/interlef/Fireworks_-_10863_crfefe.mp4" />
@@ -60,7 +60,7 @@ function HeroV2() {
                         width: '100%',
                         height: '100%',
                         position: "fixed",
-                        background: '#fff'
+                        background: 'transparent'
                     }}
                 />
             </div>
