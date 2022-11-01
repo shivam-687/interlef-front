@@ -49,7 +49,7 @@ function HeroV2() {
             {/* <video ref={vidref} className='absolute w-full  left-0 top-0 aspect-video' autoPlay={true} loop >
                 <source src="https://res.cloudinary.com/dzqdvl4di/video/upload/v1665390194/interlef/Fireworks_-_10863_crfefe.mp4" />
             </video> */}
-            <div className=" absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm hidden md:block">
+            {/* <div className=" absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm hidden md:block">
                 <Fireworks
                     ref={ref}
                     options={{ opacity: 0.5, intensity: 12 }}
@@ -63,7 +63,7 @@ function HeroV2() {
                         background: 'transparent'
                     }}
                 />
-            </div>
+            </div> */}
 
             {/* </div> */}
             <div className=' flex flex-col items-center'>

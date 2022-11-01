@@ -12,9 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <TopStrip/>
-      <div className="fixed left-0 bottom-0 w-full z-30 bg-base">
+      {/* <div className="fixed left-0 bottom-0 w-full z-30 bg-base">
                 <DiwaliDeepStrip />
-            </div>
+            </div> */}
       <Navigation></Navigation>
       <Component {...pageProps} />
      
