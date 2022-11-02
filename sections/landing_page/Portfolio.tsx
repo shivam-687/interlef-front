@@ -14,6 +14,11 @@ const Portfolio = () => {
             link: 'https://poochies.interlef.com'
         },
         {
+            title: "Fusion Kennel",
+            image: "/images/fusionkennel.png",
+            link: 'https://fusionkennel.interlef.com'
+        },
+        {
             title: "Tezpremier Spices",
             image: "/images/tezpremier-project.jpg"
         },
