@@ -2,10 +2,13 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MdOutlineLocalOffer, MdPhoneCallback } from 'react-icons/md'
+import Timer from './Timer'
 
 const HeroSection = () => {
     return (
-        <section className='grid grid-cols-1 md:grid-cols-2 py-20 md:py-28 px-5 gap-10 md:gap-0'>
+        <section className=''>
+            <div className='flex justify-center'><Timer/></div>
+            <div className='grid grid-cols-1 md:grid-cols-2 py-20 md:py-28 px-5 gap-10 md:gap-0'>
             <div className=' flex items-center justify-center'>
                 <div className='max-w-md lg:max-w-xl '>
                     <h1 className='text-5xl md:text-7xl font-bold'>
@@ -30,6 +33,7 @@ const HeroSection = () => {
 
                 </div>
                     <div className="absolute w-full left-0  md:w-3/4 h-1/2 md:h-2/4 rounded-3xl md:translate-x-1/3 z-10 bg-warning bottom-[6px]"></div>
+            </div>
             </div>
         </section>
     )
