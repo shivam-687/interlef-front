@@ -37,7 +37,7 @@ const Timer = () => {
       const interval = setInterval(() => {
         const st = countdownTimer()
         setTime(st)
-        console.log("time", st )
+        // console.log("time", st )
       }, 1000)
     
       return () => {
