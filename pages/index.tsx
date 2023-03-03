@@ -1,5 +1,5 @@
 
-import type { NextPage } from 'next'
+import type { GetStaticPropsContext, NextPage } from 'next'
 import Footer from '../components/Footer';
 import AttentionCard from '../sections/landing_page/Attentioncard';
 import Contact from '../sections/landing_page/Contact';
@@ -55,6 +55,12 @@ const Home: NextPage = () => {
       <Footer></Footer>
     </>
   );
+}
+
+export async function getStaticProps(context: GetStaticPropsContext) {
+  return {
+    props: {}, // will be passed to the page component as props
+  }
 }
 
 export default Home

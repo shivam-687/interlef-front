@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Fade } from 'react-awesome-reveal';
 import { BsWhatsapp } from 'react-icons/bs';
-import { MdPhoneCallback } from 'react-icons/md'
+import { MdOutlineLocalOffer, MdPhoneCallback } from 'react-icons/md'
 
 import { Fireworks } from '@fireworks-js/react'
 import type { FireworksHandlers } from '@fireworks-js/react'
@@ -87,7 +87,7 @@ function HeroV2() {
             </div>
             <div className="flex items-center gap-5 mt-10 md:mt-10">
                 <div className="">
-                    <Fade direction='left'><ScrollTo name="contact"><button className="btn md:btn-lg btn-primary shadow-lg shadow-primary/20 gap-2"><MdPhoneCallback className='text-2xl' />Get Callback</button></ScrollTo></Fade>
+                    <Fade direction='left'><ScrollTo name="contact"><button className="btn md:btn-lg btn-primary shadow-lg shadow-primary/20 gap-2"><MdOutlineLocalOffer className='text-2xl' />Claim Offer!</button></ScrollTo></Fade>
                 </div>
                 <div className="">
                     <Fade direction='right'>

@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
-import { MdPhoneCallback } from 'react-icons/md'
+import { MdOutlineLocalOffer, MdPhoneCallback } from 'react-icons/md'
 
 const HeroSection = () => {
     return (
@@ -18,17 +19,17 @@ const HeroSection = () => {
                         Don&apos;t miss out on our limited-time offer - let us help you take your online presence to the next level with our custom-built static websites.
                     </p>
                     <div className='mt-10'>
-                    <button className="btn md:btn-lg btn-warning shadow-lg shadow-warning/20 gap-2"><MdPhoneCallback className='text-2xl'/>Get Callback</button>
+                    <Link href="/offer/registration"><button className="btn md:btn-lg btn-warning shadow-lg shadow-warning/20 gap-2"><MdOutlineLocalOffer className='text-2xl' />Register Now!</button></Link>
                     </div>
                 </div>
             </div>
             <div className='overflow-hidden relative '>
                 <div className='relative'>
-                    <div className='relative hidden md:block'><Image className='z-20  image' src={`/images/get-free-site/get-free-site-hero.png`} alt="" width={1535} height={1135} /></div>
+                    <div className='relative hidden md:block'><Image className='z-20  image' src={`/images/get-free-site/get-free-site-hero.png`} alt="" width={1335} height={1135} /></div>
                     <div className='relative block md:hidden'><Image className='z-20' src={`/images/get-free-site/h1.png`} alt="" width={775} height={681} /></div>
 
-                    <div className="absolute w-2/3 h-72 rounded-3xl translate-x-1/3 z-10 bg-warning bottom-[6px]"></div>
                 </div>
+                    <div className="absolute w-full left-0  md:w-3/4 h-1/2 md:h-2/4 rounded-3xl md:translate-x-1/3 z-10 bg-warning bottom-[6px]"></div>
             </div>
         </section>
     )

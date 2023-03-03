@@ -1,5 +1,6 @@
 import React from 'react'
-import { mergeClasses } from '../helpers/helpers';
+import { twMerge } from 'tailwind-merge'
+import Divider from './Divider'
 
 export type SectionProps = {
     title?: string,
@@ -14,7 +15,7 @@ export type SectionProps = {
 const Section = ({
     title,
     subTitle,
-    divider=false,
+    divider=true,
     className='',
     container=true,
     titleContainerClass="",
@@ -24,10 +25,13 @@ const Section = ({
     const baseClass = "";
 
     return (
-        <div className={mergeClasses(`${container?'container mx-auto': 'w-full'} px-5 py-14`, className)}>
-            <div className={mergeClasses(`w-full mb-10 flex justify-center flex-col gap-3`, className)}>
-                {title && <h2 className='text-2xl '>{title}</h2>}
+        <div className={twMerge(`${container?'container mx-auto': 'w-full'} px-5 py-14`, className)}>
+            <div className={twMerge(`w-full mb-14 flex justify-center items-center flex-col gap-3`, className)}>
+                {title && <h2 className='text-3xl md:text-4xl font-bold'>{title}</h2>}
                 {subTitle && <h3 className='text-lg font-normal max-w-sm text-center'>{subTitle}</h3>}
+                
+                
+                {divider && <div className="max-w-xl w-full"><Divider/></div>}
             </div>
 
             {children}
