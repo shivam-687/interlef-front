@@ -14,13 +14,13 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <OfferStrip>
+      {/* <OfferStrip>
         <div className="w-full flex flex-col md:flex-row justify-center items-center">
         <p className="text-lg">Limited Time Offer: Get Your Website for Free!</p>
         <div><Link href={'/offer/registration'} ><button className="btn btn-warning mx-2 btn-sm">REGISTER</button></Link>
           <Link href={'/offer/free-website-offer'}><button className="btn text-warning btn-link mr-2 btn-sm">Learn More</button></Link></div>
         </div>
-      </OfferStrip>
+      </OfferStrip> */}
       <TopStrip />
       {/* <div className="fixed left-0 bottom-0 w-full z-30 bg-base">
                 <DiwaliDeepStrip />
