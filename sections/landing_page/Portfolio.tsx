@@ -1,5 +1,5 @@
 import Divider from "../../components/Divider";
-import PortfolioCard from "../../components/PortfolioCard";
+import PortfolioCard, { PortfolioCardProp } from "../../components/PortfolioCard";
 import Slider, { Settings } from 'react-slick';
 import { nanoid, } from 'nanoid';
 import { Fade } from "react-awesome-reveal";
@@ -7,7 +7,14 @@ import { Fade } from "react-awesome-reveal";
 
 const Portfolio = () => {
 
-    const portfolioList = [
+    const portfolioList: PortfolioCardProp[] = [
+        {
+            title: "Aryan Intl LLC",
+            image: "/images/aryanintl.jpg",
+            link: 'https://www.aryanintl.com/',
+            caseStudyLink: 'https://www.aryanintl.com/'
+
+        },
         {
             title: "Poochie",
             image: "/images/poochie.jpg",
@@ -106,7 +113,7 @@ const Portfolio = () => {
                             return <div key={`${nanoid(5)}_${index}`} className="overflow-hidden px-2 py-5">
                             <Fade direction="up" triggerOnce delay={index * 200}>
                             <div className="flex items-center justify-center ">
-                                <PortfolioCard title={item.title} image={item.image} link={item.link}></PortfolioCard>
+                                <PortfolioCard {...item}></PortfolioCard>
                             </div>
                             </Fade>
                         </div>

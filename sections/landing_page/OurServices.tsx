@@ -18,14 +18,14 @@ const OurServices = () => {
             image: "/images/services/ecommerce.svg"
         },
         {
-            title: "Custom CMS Development",
-            description: "Need custom arrangements for your brand? Interlef Web Solutions can assist you with high-performing, secure, and instinctive web arrangements for your CMS stage that progress your trade forms and serve your users globally. Whether you’re seeking out for CMS advancement administrations, offer assistance with CMS integrative, CMS application advancement, CMS relocations, CMS plugin improvement, or CMS back and upkeep, we’ve got you secured. So let us rearrange your complex commerce workflows.",
+            title: "Custom Web App Development",
+            description: "Our Custom Web Application plan is for businesses that need a more advanced website or web application. Whether you need a custom admin panel, a startup web app, or a complex web platform built from scratch, we have the expertise to bring your vision to life. We use modern and cutting-edge technologies to build web applications that are robust, scalable, and high-performance. Our team of experienced developers will work closely with you to create a tailored solution that meets your unique needs.",
             image: "/images/services/cms-development.svg"
         },
 
         {
-            title: "API Integration",
-            description: "Interlef has significant experience in the development and integration of APIs, together with web applications. This allows us to deliver APIs and their integration without disrupting your company's operations. We will analyze your current processes and architecture, help you develop a strategy and a plan, and identify and eliminate issues. With extensive experience, we will also help you make the right choice of API development and API integration solutions to meet your needs.",
+            title: "IT Consulting",
+            description: "Our IT Consulting service is designed to help businesses make the most of their technology investments. We provide expert guidance and advice on a range of IT-related issues, including cybersecurity, software selection, network design, and more. Whether you're looking to improve your IT infrastructure, streamline your operations, or reduce your IT costs, our team of experienced consultants can help. We'll work with you to understand your business needs and goals, and develop a customized IT strategy that meets your unique requirements. ",
             image: "/images/services/api-integration.svg"
         }
     ]

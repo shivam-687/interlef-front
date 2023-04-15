@@ -7,14 +7,12 @@ import HeroSection from '../sections/landing_page/HeroSection';
 import OurServices from '../sections/landing_page/OurServices';
 import OurTechnology from '../sections/landing_page/OurTechnology';
 import Portfolio from '../sections/landing_page/Portfolio';
-import Review from '../sections/landing_page/Review';
 import WelcomeSection from '../sections/landing_page/WelcomeSection';
 import WhyOurAgency from '../sections/landing_page/WhyOurAgency';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Element, animateScroll  } from 'react-scroll'
 import Head from 'next/head';
 import HeroV2 from '../sections/landing_page/HeroV2';
-import TopStrip from '../components/TopStrip';
-import DiwaliDeepStrip from '../components/special-ocassion/DiwaliDeepStrip';
+import PricingSection from '../sections/PricingSection';
 
 
 
@@ -48,6 +46,11 @@ const Home: NextPage = () => {
       <OurTechnology></OurTechnology>
       <Element name='portfolio'><Portfolio></Portfolio></Element>
       {/* <Review></Review> */}
+      <Element name="pricing">
+      <section className="mt-28">
+        <PricingSection/>
+      </section>
+      </Element>
       <section className='mt-28'>
         <AttentionCard></AttentionCard>
       </section>

@@ -43,6 +43,16 @@ export const Navigation = () => {
             type: 'scroll'
         },
         {
+            lable: "Portfolio",
+            link: 'portfolio',
+            type: 'scroll'
+        },
+        {
+            lable: "Pricing",
+            link: 'pricing',
+            type: 'scroll'
+        },
+        {
             lable: "Contact",
             link: 'contact',
             type: 'scroll'

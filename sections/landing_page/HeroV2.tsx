@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useEffect, useRef, useState } from 'react'
 import { Fade } from 'react-awesome-reveal';
 import { BsWhatsapp } from 'react-icons/bs';
-import { MdOutlineLocalOffer, MdPhoneCallback } from 'react-icons/md'
-
-import { Fireworks } from '@fireworks-js/react'
+import { MdPhoneCallback } from 'react-icons/md'
 import type { FireworksHandlers } from '@fireworks-js/react'
 import { Navigation } from '../../components/Navigation';
 import ScrollTo from '../../components/ScrollTo';
+
+// Professionally designed revenue boosters
 
 function HeroV2() {
     const [lineNo, setLineNo] = useState(0);
@@ -19,19 +20,18 @@ function HeroV2() {
     const vidref = useRef<HTMLVideoElement>(null);
     const ref = useRef<FireworksHandlers>(null)
     const texts = [
-        'A Digital Agency',
-        'Focused On',
-        'Website Things'
+        'Premium designed',
+        'revenue boosters',
+        'Websites'
     ]
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             if (lineNo >= texts.length - 1) {
-                setLineNo(0);Navigation
+                setLineNo(0); Navigation
             } else {
                 setLineNo(prevCount => prevCount + 1);
             }
-            // console.log("Line No: ", lineNo);
         }, 3000);
         setActiveGradient(gradientPattern[lineNo]);
         return () => clearInterval(intervalId);
@@ -45,27 +45,7 @@ function HeroV2() {
 
     return (
         <div className='min-h-[calc(100vh-70px)] flex flex-col justify-center items-center relative overflow-hidden bg-transparent'>
-            {/* <div className="absolute w-full h-full left-0 top-0"> */}
-            {/* <video ref={vidref} className='absolute w-full  left-0 top-0 aspect-video' autoPlay={true} loop >
-                <source src="https://res.cloudinary.com/dzqdvl4di/video/upload/v1665390194/interlef/Fireworks_-_10863_crfefe.mp4" />
-            </video> */}
-            {/* <div className=" absolute w-full h-full left-0 top-0 bg-transparent backdrop-blur-sm hidden md:block">
-                <Fireworks
-                    ref={ref}
-                    options={{ opacity: 0.5, intensity: 12 }}
-                    style={{
-                        
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        position: "fixed",
-                        background: 'transparent'
-                    }}
-                />
-            </div> */}
 
-            {/* </div> */}
             <div className=' flex flex-col items-center'>
                 {
                     texts.map((t, i) => {
@@ -77,6 +57,7 @@ function HeroV2() {
                         font-[900] text-center transition-all ease-out duration-1000 
                         pb-2 bg-clip-text 
                         relative
+                        capitalize
                         z-20
                         ${gradientPattern[i]} ${lineNo === i ? 'text-transparent before:opacity-100' : 'text-black before:opacity-0'}`}
                                 >{t}</h2>
@@ -93,7 +74,7 @@ function HeroV2() {
                     <Fade direction='right'>
                         <div className={`rounded-[12px] relative `}>
                             <div className={`absolute top-0 left-0 w-full h-full -z-10 blur-3xl ${activeGradient}`}></div>
-                            <a href="https://wa.me/7984226239" target="_blank" rel="noreferrer" className={`btn md:btn-lg bg-base-100 hover:bg-base-200 text-black gap-2 shadow-lg border-none transition-all ease-out duration-1000`}>
+                            <a href="https://wa.me/7984226239" target="_blank" className={`btn md:btn-lg bg-base-100 hover:bg-base-200 text-black gap-2 shadow-lg border-none transition-all ease-out duration-1000`}>
                                 <BsWhatsapp className=" text-2xl" />
                                 Whatsapp
                             </a>
