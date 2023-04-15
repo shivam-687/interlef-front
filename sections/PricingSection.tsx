@@ -29,7 +29,7 @@ const PricingSection = () => {
           </div>
           <div className="-mx-4 flex flex-wrap justify-center">
             <PricingCard
-            title="Basic"
+            title="Business"
             desc={`Our Business Site plan is perfect for small businesses looking to establish a professional online presence. `}
             price={7000}
             featureList={[
@@ -50,7 +50,7 @@ const PricingSection = () => {
               <b key={nanoid()} className='mt-5'>Note: GST @ 18% Applicable on All Purchase</b>
             ]}
             actionText='Book Now For FREE'
-            actionMessage='Hii there, I am looking for new E-Commerce Website. How we can proceed further...'
+            actionMessage='Hii there, I am looking for new Business Website. How we can proceed further...'
             />
             <PricingCard
             title="E-Commerce"
