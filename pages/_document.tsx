@@ -84,6 +84,7 @@ class MyDocument extends Document {
                     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff"></meta>
+                    <meta name="p:domain_verify" content="452767b34f6139df18ef596247d565dd"/>
 
 
 
