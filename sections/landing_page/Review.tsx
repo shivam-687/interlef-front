@@ -76,7 +76,7 @@ const Review = () => {
         <section className="py-20 px-5 container mx-auto">
             <div className="header text-center flex item-center justify-center">
                 <div className="max-w-lg w-full">
-                    <h1 className="text-4xl font-semibold text-center">How They Are Setisfied</h1>
+                    <h2 className="text-4xl font-semibold text-center">How They Are Setisfied</h2>
                     <Divider></Divider>
                 </div>
             </div>

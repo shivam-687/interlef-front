@@ -29,7 +29,7 @@ const ContactInfoCard = () => {
 
     return (
         <div className="rounded-lg h-full p-5 flex flex-col items-center justify-start bg-gradient-to-b from-primary to-[#331782] text-white">
-            <h1 className="text-4xl text-center mb-4">Contact:</h1>
+            <h2 className="text-4xl text-center mb-4">Contact:</h2>
             <div>
                 {contactList.map((contact, index) => {
                         return (

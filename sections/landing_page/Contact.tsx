@@ -13,7 +13,7 @@ const Contact = () => {
                     <div className="overflow-hidden">
                         <Fade direction="up" triggerOnce>
 
-                            <h1 className="text-3xl md:text-4xl font-bold">Don’t dream for success, contact us</h1>
+                            <h2 className="text-3xl md:text-4xl font-bold">Don’t dream for success, contact us</h2>
                         </Fade>
                     </div>
                     <Divider></Divider>

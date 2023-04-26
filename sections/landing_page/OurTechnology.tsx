@@ -66,7 +66,7 @@ const OurTechnology = () => {
 
                 <div className=" max-w-xl">
                     <div className="overflow-hidden">
-                    <div className="overflow-hidden"><Fade triggerOnce direction="up" delay={500}><h1 className="text-4xl font-bold text-center lg:text-left">Our Tech Stack</h1></Fade></div>
+                    <div className="overflow-hidden"><Fade triggerOnce direction="up" delay={500}><h2 className="text-4xl font-bold text-center lg:text-left">Our Tech Stack</h2></Fade></div>
                         <Divider></Divider>
                         <div className="flex items-center justify-center my-8 lg:hidden">
                             <div className="">

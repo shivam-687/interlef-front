@@ -21,7 +21,7 @@ const HeroSection = () => {
                         <div className="content max-w-lg text-center lg:text-left">
                             <span className="bg-primary inline-block text-white mb-4 p-1 text-base rounded">Interlef Web Solutions</span>
                             {/* <ScrollAnimation animateIn="fadeIn"> */}
-                                <h1 className="text-4xl lg:text-5xl font-black uppercase">A <span className="text-primary">Digital Agency</span> <br /> Focused On Web</h1>
+                                <h2 className="text-4xl lg:text-5xl font-black uppercase">A <span className="text-primary">Digital Agency</span> <br /> Focused On Web</h2>
                             {/* </ScrollAnimation> */}
                             {/* <ScrollAnimation animateIn="fadeIn" animateDelay={.3} > */}
                                 <p className="text-base leading-tight text-center md:text-left mt-3">

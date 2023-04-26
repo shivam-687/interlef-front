@@ -88,7 +88,7 @@ class MyDocument extends Document {
                     <meta name='bingbot' content='index, follow' />
 
                     {/* Favicons */}
-                    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
+                    {/* <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" /> */}
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
                     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
                     <link rel="manifest" href="/site.webmanifest" />
@@ -99,8 +99,8 @@ class MyDocument extends Document {
 
 
 
-                    <meta name="title" content="Interlef: Top web development agency in Uttar Pradesh" />
-                    <meta name="description" content="We’re different… and by different we mean better. We are creative team of designers, developers, and strategists, building elevated websites. Using a proven method of innovative design and personalized strategies, we can elevate your brand above the competition." />
+                    {/* <meta name="title" content="Interlef: Top web development agency in Uttar Pradesh" />
+                    <meta name="description" content="We’re different… and by different we mean better. We are creative team of designers, developers, and strategists, building elevated websites. Using a proven method of innovative design and personalized strategies, we can elevate your brand above the competition." /> */}
 
 
                     <meta property="og:type" content="website" />

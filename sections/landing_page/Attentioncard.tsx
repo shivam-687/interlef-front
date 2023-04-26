@@ -9,7 +9,7 @@ const AttentionCard = () => {
             <Fade triggerOnce direction="up">
             <div className="rounded-lg bg-gradient-to-b from-primary to-[#331782] max-w-screen-xl w-full grid gap-5 grid-1 lg:grid-cols-5 shadow-xl shadow-primary/30 p-5 text-white">
                 <div className="content lg:col-span-3">
-                    <h1 className="text-4xl md:text-5xl lg:6xl font-bold mb-3">Have a really great idea ?</h1>
+                    <h2 className="text-4xl md:text-5xl lg:6xl font-bold mb-3">Have a really great idea ?</h2>
                     <p className="text-lg ">Did you know that a poor-performing app can taken a toll you 90% of your portable clients? In today’s times, clients are acclimated to great, responsive web plans and applications, which is why they’re restless. Too, it as it were takes clients 50 milliseconds to create an supposition approximately your brand through your site. Here’s how our administrations as an expert website improvement company can assist you develop your business.</p>
 
                     <div className="btns gap-5 mt-10 flex ">

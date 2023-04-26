@@ -35,7 +35,7 @@ const WhyOurAgency = () => {
             <div className="container mx-auto grid grid-cols-1 gap-5 lg:grid-cols-2">
                 <div className="w-full flex flex-col  items-center">
                     <div className="block lg:hidden mb-4 overflow-hidden">
-                        <Fade triggerOnce direction="up"><h1 className="text-4xl font-bold mb-1">Why Our Agency</h1></Fade>
+                        <Fade triggerOnce direction="up"><h2 className="text-4xl font-bold mb-1">Why Our Agency</h2></Fade>
                         <Divider></Divider>
                     </div>
                     <Fade triggerOnce delay={500} duration={2000}><Image src={image} alt="" width={700} height={700}></Image></Fade>
@@ -43,7 +43,7 @@ const WhyOurAgency = () => {
 
                 <div className="w-full flex flex-col justify-center">
                     <div className="hidden lg:block mb-4 overflow-hidden">
-                    <Fade triggerOnce direction="up"><h1 className="text-4xl font-bold mb-1"><span className='text-3xl'>😎</span> Why Our Agency</h1></Fade>
+                    <Fade triggerOnce direction="up"><h2 className="text-4xl font-bold mb-1"><span className='text-3xl'>😎</span> Why Our Agency</h2></Fade>
                         <Divider></Divider>
                     </div>
 
