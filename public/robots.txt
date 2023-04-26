@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://interlef.com
+
+# Sitemaps
+Sitemap: https://interlef.com/sitemap.xml
