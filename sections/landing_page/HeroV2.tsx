@@ -46,7 +46,7 @@ function HeroV2() {
     return (
         <div className='min-h-[calc(100vh-70px)] flex flex-col justify-center items-center relative overflow-hidden bg-transparent'>
 
-            <h1 className=' flex flex-col items-center'>
+            <h1 className=' flex flex-col items-center justify-center'>
                 {
                     texts.map((t, i) => {
                         return <div className='overflow-hidden' key={i}>
