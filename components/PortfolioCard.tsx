@@ -9,7 +9,7 @@ export type PortfolioCardProp = {
 
 const PortfolioCard = ({ title, image, link, caseStudyLink }: PortfolioCardProp) => {
     return (
-        <div className="relative group rounded-lg overflow-hidden border-2 w-full border-transparent shadow-lg hover:shadow-none shadow-primary/20 group hover:border-primary  transition duration-300 aspect-[4/3]">
+        <div className="relative group rounded-lg overflow-hidden border-2 w-full border-transparent shadow-lg hover:shadow-none shadow-primary/20 group hover:border-primary  transition duration-300 aspect-[16/9]">
             {/* <Image src={image} alt="" width="400" height={400}></Image> */}
             <Image src={image} alt="" layout="fill" objectFit="cover"></Image>
             {/* <div className="dog-image aspect-[4/3] relative w-full rounded-xl overflow-hidden">

@@ -31,7 +31,7 @@ const PricingSection = () => {
             <PricingCard
             title="Business"
             desc={`Our Business Site plan is perfect for small businesses looking to establish a professional online presence. `}
-            price={7000}
+            price={8999}
             featureList={[
               '1 Free Domain Name',
               <b key={nanoid()}>15 Page (Dynamic Website)</b>,
@@ -55,7 +55,7 @@ const PricingSection = () => {
             <PricingCard
             title="E-Commerce"
             desc={`ur Ecommerce Site plan is designed for businesses that want to sell their products or services online. `}
-            price={15000}
+            price={17999}
             featureList={[
               '1 Free Domain Name',
               <b key={nanoid()}>15 Page (Dynamic Website)</b>,

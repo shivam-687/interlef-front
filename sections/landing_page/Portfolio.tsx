@@ -9,6 +9,13 @@ const Portfolio = () => {
 
     const portfolioList: PortfolioCardProp[] = [
         {
+            title: "NKPays",
+            image: "/images/nkpays-in.png",
+            link: 'https://nkpays.in/',
+            caseStudyLink: 'https://nkpays.in'
+
+        },
+        {
             title: "Aryan Intl LLC",
             image: "/images/aryanintl.jpg",
             link: 'https://www.aryanintl.com/',

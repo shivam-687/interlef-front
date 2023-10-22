@@ -51,7 +51,7 @@ function HeroV2() {
                     texts.map((t, i) => {
                         return <div className='overflow-hidden' key={i}>
                             <Fade direction="up" delay={(i + 1) * 300}>
-                                <span key={i} className={`
+                                <h2 key={i} className={`
                                     leading-none text-6xl 
                                     sm:text-6xl md:text-9xl lg:text-8xl xl:text-9xl 
                                     font-[900] text-center transition-all ease-out duration-1000 
@@ -60,7 +60,7 @@ function HeroV2() {
                                     capitalize
                                     z-20
                                     ${gradientPattern[i]} ${lineNo === i ? 'text-transparent before:opacity-100' : 'text-black before:opacity-0'}`}
-                                    >{t}</span>
+                                    >{t}</h2>
                             </Fade>
                         </div>
                     })
