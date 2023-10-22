@@ -51,12 +51,7 @@ function HeroV2() {
                     texts.map((t, i) => {
                         return <div className='overflow-hidden' key={i}>
                             <Fade direction="up" delay={(i + 1) * 300}>
-<<<<<<< HEAD
                                 <h2 key={i} className={`
-=======
-                                <span key={i} className={`
-                                      text-center
->>>>>>> e392f47051a8242c7edfc3e7612891b125995cd4
                                     leading-none text-6xl 
                                     sm:text-6xl md:text-9xl lg:text-8xl xl:text-9xl 
                                     font-[900] text-center transition-all ease-out duration-1000 
