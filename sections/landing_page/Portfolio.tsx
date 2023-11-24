@@ -32,7 +32,7 @@ const Portfolio = () => {
         },
         {
             title: "Aryan Intl LLC",
-            image: "/images/aryanintel-mockup.jpg",
+            image: "/images/aryanintel-mockup.png",
             link: 'https://www.aryanintl.com/',
             caseStudyLink: 'https://www.aryanintl.com/'
 
