@@ -8,6 +8,21 @@ import { Fade } from "react-awesome-reveal";
 const Portfolio = () => {
 
     const portfolioList: PortfolioCardProp[] = [
+        
+        {
+            title: "RsGalaxy LLC",
+            image: "/images/rsgalaxy-mockup.png",
+            link: 'https://rsgalaxy.com/',
+            caseStudyLink: 'https://rsgalaxy.com/'
+
+        },
+        {
+            title: "BetaCode",
+            image: "/images/betacode.png",
+            link: 'https://betacode.vercel.app/',
+            caseStudyLink: 'https://betacode.vercel.app/'
+
+        },
         {
             title: "NKPays",
             image: "/images/nkpays-in.png",
@@ -17,7 +32,7 @@ const Portfolio = () => {
         },
         {
             title: "Aryan Intl LLC",
-            image: "/images/aryanintl.jpg",
+            image: "/images/aryanintel-mockup.jpg",
             link: 'https://www.aryanintl.com/',
             caseStudyLink: 'https://www.aryanintl.com/'
 
@@ -92,7 +107,6 @@ const Portfolio = () => {
                     <Divider></Divider>
                     <div className="overflow-hidden">
                         <Fade direction="down" triggerOnce>
-
                             <p className=" mt-4">We bring real world solutions to each client’s problem through a deep understanding of their market, product, and vision.</p>
                         </Fade>
                     </div>
